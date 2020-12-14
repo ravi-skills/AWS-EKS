@@ -1,0 +1,15 @@
+repos:
+  - repo: git://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.45.0
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
+      - id: terraform_docs_replace
+      - id: checkov
+        args: ['-d .']
+      - id: terraform_tflint
+        args: ['--args=--deep']
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: check-merge-conflict

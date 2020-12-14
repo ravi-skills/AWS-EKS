@@ -1,10 +1,14 @@
 # Local .terraform directories
 **/.terraform/*
+kubectl/
+pre-commit_setup_steps.txt
+myfile.txt
+
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+*.tfplan
 # Crash log files
 crash.log
 
